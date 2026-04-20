@@ -638,7 +638,7 @@ a:focus-visible, button:focus-visible {
 }
 .journey-line-future {
   background: var(--border-sub);
-  flex: 0.6;
+  flex: 0.35;
 }
 .journey-line-dot {
   position: absolute;
