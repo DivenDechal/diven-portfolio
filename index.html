@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Diven Dechal Jatiputra” Portfolio</title>
+  <meta name="description" content="Portfolio of Diven Dechal Jatiputra, an AI Developer and ML Engineer building intelligent systems in computer vision and NLP." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <nav class="nav" id="nav">
+    <span class="nav-logo">Portfolio</span>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" class="nav-active">Home</a></li>
+      <li><a href="#edu">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <section class="hero" id="about">
+    <div class="hero-glow"></div>
+    <div class="hero-grid-bg"></div>
+
+    <div class="hero-body">
+      <div class="hero-left">
+        <div class="hero-avatar">
+          <img src="your-photo.jpg" alt="Diven Dechal Jatiputra" class="avatar-img" />
+          <div class="avatar-placeholder">
+            <span class="avatar-placeholder-initials">DD</span>
+            <span class="avatar-placeholder-hint mono">Add<br/>photo</span>
+          </div>
+          <span class="avatar-status-dot"></span>
+        </div>
+        <div class="hero-status mono">
+          <span class="status-dot"></span>
+          Open to opportunities
+        </div>
+        <p class="hero-role">AI Developer / ML Engineer</p>
+        <h1 class="hero-name">
+          <span class="name-bar"></span>
+          Diven Dechal<br/>Jatiputra
+        </h1>
+        <p class="hero-desc">
+          Building intelligent systems — real-time gesture recognition,
+          edge-deployed fire detection, and NLP content moderation.
+        </p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn-primary">View Projects</a>
+          <a href="#contact" class="btn-ghost">Contact</a>
+          <a href="your-resume.pdf" target="_blank" class="btn-resume mono">View Resume &#x2197;</a>
+        </div>
+        <div class="hero-social mono">
+          <span class="social-label">Location</span>
+          <a href="#">Jakarta, Indonesia</a>
+          <span class="social-sep">·</span>
+          <a href="#">Taipei (Exchange)</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="featured-card">
+          <div class="featured-card-header">
+            <div class="featured-label mono">
+              <span class="featured-dot"></span>
+              Featured Project
+            </div>
+            <span class="featured-num mono">01 / 03</span>
+          </div>
+
+          <h3 class="featured-title">SignLingo</h3>
+          <p class="featured-sub mono">AI-Powered Sign Language App</p>
+          <p class="featured-desc">
+            Real-time BISINDO gesture recognition in the browser using a
+            Hybrid CNN-LSTM model — no server round-trip required.
+          </p>
+
+          <div class="featured-metrics">
+            <div class="f-metric">
+              <span class="f-metric-val mono" data-val="95.3"><span class="count-num">0</span>%</span>
+              <span class="f-metric-key">Accuracy</span>
+            </div>
+            <div class="f-metric">
+              <span class="f-metric-val mono">26</span>
+              <span class="f-metric-key">Gestures</span>
+            </div>
+            <div class="f-metric">
+              <span class="f-metric-val mono">&lt;50ms</span>
+              <span class="f-metric-key">Latency</span>
+            </div>
+          </div>
+
+          <div class="featured-chips">
+            <span class="chip mono">CNN-LSTM</span>
+            <span class="chip mono">TensorFlow</span>
+            <span class="chip mono">Real-time</span>
+          </div>
+
+          <div class="featured-footer">
+            <button class="project-details-btn featured-details-btn" data-project="signlingo">Read Case Study &#x2192;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="section" id="edu">
+    <div class="section-header">
+      <span class="eyebrow mono"> Education</span>
+      <h2 class="section-title">Academic Journey</h2>
+      <p class="section-sub">Two institutions. Two countries. One direction.</p>
+    </div>
+
+    <div class="edu-journey-bar mono">
+      <span class="journey-node journey-node-start">2023</span>
+      <div class="journey-line">
+        <div class="journey-line-fill"></div>
+        <div class="journey-line-label">Jakarta - Taipei</div>
+      </div>
+      <span class="journey-node journey-node-now">Now</span>
+      <div class="journey-line journey-line-future">
+        <div class="journey-line-dot"></div>
+      </div>
+      <span class="journey-node journey-node-end">2027</span>
+    </div>
+
+    <div class="edu-cards-grid">
+
+      <div class="edu-card-v2 fade-in">
+        <div class="edu-bg-abbr">BINUS</div>
+        <div class="edu-card-inner">
+          <div class="edu-card-top">
+            <span class="badge mono">Current Batch 2023</span>
+            <span class="edu-flag"> </span>
+          </div>
+          <h3 class="edu-institution">Bina Nusantara<br/>University</h3>
+          <p class="edu-degree">Bachelor of Computer Science · Global Class</p>
+          <div class="edu-detail-row mono">
+            <span class="edu-location">Jakarta, Indonesia</span>
+            <span class="edu-period">Sept 2023 - Feb 2027</span>
+          </div>
+          <div class="edu-modules">
+            <span class="edu-module-chip">Machine Learning</span>
+            <span class="edu-module-chip">Data Structures</span>
+            <span class="edu-module-chip">Computer Vision</span>
+            <span class="edu-module-chip">Software Engineering</span>
+            <span class="edu-module-chip">NLP</span>
+          </div>
+          <div class="edu-progress-wrap">
+            <div class="edu-progress-bar">
+              <div class="edu-progress-fill" style="--prog: 80%"></div>
+            </div>
+            <span class="edu-progress-label mono">~80% complete</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="edu-card-v2 edu-card-exchange fade-in">
+        <div class="edu-bg-abbr edu-bg-abbr-purple">NTUST</div>
+        <div class="edu-card-inner">
+          <div class="edu-card-top">
+            <span class="badge badge-purple mono">Exchange Program</span>
+          
+          </div>
+          <h3 class="edu-institution">National Taiwan University<br/>of Science &amp; Technology</h3>
+          <p class="edu-degree">Dept. Computer Science &amp; Information Engineering</p>
+          <div class="edu-detail-row mono">
+            <span class="edu-location"> Taipei, Taiwan</span>
+            <span class="edu-period">Feb 2026 - Jun 2026</span>
+          </div>
+          <div class="edu-modules">
+            <span class="edu-module-chip edu-module-chip-purple">Smart Environment Sensor Tech</span>
+            <span class="edu-module-chip edu-module-chip-purple">Computer Vision</span>
+            <span class="edu-module-chip edu-module-chip-purple">Cyber Security</span>
+            <span class="edu-module-chip edu-module-chip-purple">Smart Technology and Industrial Innovation</span>
+          </div>
+          <div class="edu-progress-wrap">
+            <div class="edu-progress-bar edu-progress-bar-purple">
+              <div class="edu-progress-fill edu-progress-fill-purple" style="--prog: 45%"></div>
+            </div>
+            <span class="edu-progress-label mono">~45% complete</span>
+          </div>
+          <div class="edu-exchange-badge mono">
+            <span class="ex-dot"></span>
+            International Exchange
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  
+  <section class="section" id="projects">
+    <div class="section-header">
+      <span class="eyebrow mono">01 - Projects</span>
+      <h2 class="section-title">Selected Work</h2>
+      <p class="section-sub">Three flagship builds, each focused on measurable impact, deployment realism, and applied AI engineering.</p>
+    </div>
+
+    <div class="project-showcase">
+
+      <article class="project-card fade-in">
+        <div class="project-card-head">
+          <div>
+            <p class="project-kicker mono">01 / Featured Build</p>
+            <h3 class="project-title">SignLingo</h3>
+          </div>
+          <span class="project-year mono">2025</span>
+        </div>
+
+        <div class="project-card-body">
+          <div class="project-main">
+            <p class="project-role mono">AI Developer · Feb – Jun 2025</p>
+            <p class="project-desc">
+              AI-powered sign language learning app built around a <strong>Hybrid CNN-LSTM</strong>
+              pipeline for real-time BISINDO gesture recognition, optimized for browser-based interaction.
+            </p>
+
+            <div class="project-chips">
+              <span class="chip mono">CNN-LSTM</span>
+              <span class="chip mono">TensorFlow</span>
+              <span class="chip mono">MediaPipe</span>
+              <span class="chip mono">Real-time Web</span>
+            </div>
+
+            <div class="project-story-grid">
+              <div class="project-story-block">
+                <span class="project-story-label mono">Problem</span>
+                <p>Make sign language practice interactive and immediate without relying on server-side inference.</p>
+              </div>
+              <div class="project-story-block">
+                <span class="project-story-label mono">Build</span>
+                <p>Combined landmark extraction, sequence modeling, and TensorFlow.js deployment for low-latency predictions.</p>
+              </div>
+              <div class="project-story-block">
+                <span class="project-story-label mono">Impact</span>
+                <p>Reached strong recognition performance while keeping feedback smooth enough for live practice sessions.</p>
+              </div>
+            </div>
+          </div>
+
+          <aside class="project-side">
+            <div class="project-metric-panel">
+              <div class="proj-metric">
+                <span class="proj-metric-val mono">95.3%</span>
+                <span class="proj-metric-key">Accuracy</span>
+              </div>
+              <div class="proj-metric">
+                <span class="proj-metric-val mono">26</span>
+                <span class="proj-metric-key">Gestures</span>
+              </div>
+              <div class="proj-metric">
+                <span class="proj-metric-val mono">&lt;50ms</span>
+                <span class="proj-metric-key">Latency</span>
+              </div>
+            </div>
+            <button class="project-details-btn mono" data-project="signlingo">Open Case Study</button>
+          </aside>
+        </div>
+      </article>
+
+      <article class="project-card fade-in">
+        <div class="project-card-head">
+          <div>
+            <p class="project-kicker mono">02 / Edge AI</p>
+            <h3 class="project-title">Early Forest Fire Detection</h3>
+          </div>
+          <span class="project-year mono">2025</span>
+        </div>
+
+        <div class="project-card-body">
+          <div class="project-main">
+            <p class="project-role mono">Lead Developer · Feb – Jun 2025</p>
+            <p class="project-desc">
+              Real-time deep learning system using <strong>YOLOv8</strong> to detect early smoke and fire signals,
+              designed for deployment on constrained hardware in practical monitoring environments.
+            </p>
+
+            <div class="project-chips">
+              <span class="chip mono">YOLOv8</span>
+              <span class="chip mono">Edge AI</span>
+              <span class="chip mono">Raspberry Pi</span>
+              <span class="chip mono">OpenCV</span>
+            </div>
+
+            <div class="project-story-grid">
+              <div class="project-story-block">
+                <span class="project-story-label mono">Problem</span>
+                <p>Detect fires early enough to matter in remote settings where compute and infrastructure are limited.</p>
+              </div>
+              <div class="project-story-block">
+                <span class="project-story-label mono">Build</span>
+                <p>Trained and optimized a compact detector, then adapted it for edge deployment with efficient inference.</p>
+              </div>
+              <div class="project-story-block">
+                <span class="project-story-label mono">Impact</span>
+                <p>Balanced accuracy and speed well enough to support practical real-time monitoring on lightweight devices.</p>
+              </div>
+            </div>
+          </div>
+
+          <aside class="project-side">
+            <div class="project-metric-panel">
+              <div class="proj-metric">
+                <span class="proj-metric-val mono">93.2%</span>
+                <span class="proj-metric-key">mAP@0.5</span>
+              </div>
+              <div class="proj-metric">
+                <span class="proj-metric-val mono">43 FPS</span>
+                <span class="proj-metric-key">Throughput</span>
+              </div>
+              <div class="proj-metric">
+                <span class="proj-metric-val mono">23ms</span>
+                <span class="proj-metric-key">Per Frame</span>
+              </div>
+            </div>
+            <button class="project-details-btn mono" data-project="firedetect">Open Case Study</button>
+          </aside>
+        </div>
+      </article>
+
+      <article class="project-card fade-in">
+        <div class="project-card-head">
+          <div>
+            <p class="project-kicker mono">03 / NLP Systems</p>
+            <h3 class="project-title">NLP Moderation Engine</h3>
+          </div>
+          <span class="project-year mono">2025 - 2026</span>
+        </div>
+
+        <div class="project-card-body">
+          <div class="project-main">
+            <p class="project-role mono">NLP Developer · Sept 2025 – Feb 2026</p>
+            <p class="project-desc">
+              Real-time content moderation pipeline powered by fine-tuned <strong>DistilBERT</strong>,
+              wrapped in an API-ready backend for integration into production-style web platforms.
+            </p>
+
+            <div class="project-chips">
+              <span class="chip mono">DistilBERT</span>
+              <span class="chip mono">Flask</span>
+              <span class="chip mono">NLTK</span>
+              <span class="chip mono">REST API</span>
+            </div>
+
+            <div class="project-story-grid">
+              <div class="project-story-block">
+                <span class="project-story-label mono">Problem</span>
+                <p>Screen user-generated text quickly and consistently without slowing down the platform experience.</p>
+              </div>
+              <div class="project-story-block">
+                <span class="project-story-label mono">Build</span>
+                <p>Created preprocessing, fine-tuning, and serving layers that turn a transformer model into a usable service.</p>
+              </div>
+              <div class="project-story-block">
+                <span class="project-story-label mono">Impact</span>
+                <p>Delivered a moderation engine that pairs strong classification performance with practical API response times.</p>
+              </div>
+            </div>
+          </div>
+
+          <aside class="project-side">
+            <div class="project-metric-panel">
+              <div class="proj-metric">
+                <span class="proj-metric-val mono">92%</span>
+                <span class="proj-metric-key">Accuracy</span>
+              </div>
+              <div class="proj-metric">
+                <span class="proj-metric-val mono">Real-time</span>
+                <span class="proj-metric-key">Moderation</span>
+              </div>
+              <div class="proj-metric">
+                <span class="proj-metric-val mono">REST</span>
+                <span class="proj-metric-key">API</span>
+              </div>
+            </div>
+            <button class="project-details-btn mono" data-project="nlpmod">Open Case Study</button>
+          </aside>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  
+  <div class="modal-backdrop" id="modalBackdrop">
+    <div class="modal" id="modal" role="dialog" aria-modal="true">
+      <div class="modal-header">
+        <div class="modal-header-left">
+          <span class="modal-num mono" id="modalNum"></span>
+          <div>
+            <h2 class="modal-title" id="modalTitle"></h2>
+            <p class="modal-role mono" id="modalRole"></p>
+          </div>
+        </div>
+        <button class="modal-close" id="modalClose" aria-label="Close">&#x2715;</button>
+      </div>
+      <div class="modal-chips" id="modalChips"></div>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  
+  <section class="section skills-section" id="skills">
+    <div class="section-header">
+      <span class="eyebrow mono">02 – Skills</span>
+      <h2 class="section-title">Technical Arsenal</h2>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-col fade-in">
+        <h4 class="skill-heading mono">AI / ML</h4>
+        <ul class="skill-list">
+          <li>PyTorch</li>
+          <li>TensorFlow</li>
+          <li class="highlight">YOLOv8</li>
+          <li class="highlight">BERT / DistilBERT</li>
+          <li>Computer Vision</li>
+          <li>NLP</li>
+          <li>Scikit-learn</li>
+          <li>Pandas · NumPy</li>
+        </ul>
+      </div>
+      <div class="skill-col fade-in">
+        <h4 class="skill-heading mono">Web & Backend</h4>
+        <ul class="skill-list">
+          <li class="highlight">Python</li>
+          <li>R</li>
+          <li>Laravel · Flask</li>
+          <li>PHP · JavaScript</li>
+          <li>HTML / CSS</li>
+          <li>MySQL · SQLAlchemy</li>
+        </ul>
+      </div>
+      <div class="skill-col fade-in">
+        <h4 class="skill-heading mono">Core & Tools</h4>
+        <ul class="skill-list">
+          <li>Linux</li>
+          <li>Java (OOP)</li>
+          <li>C / C++</li>
+          <li>Agile (Scrum)</li>
+          <li>SDLC</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="section" id="org">
+    <div class="section-header">
+      <span class="eyebrow mono">03 - Experience</span>
+      <h2 class="section-title">Leadership & Events</h2>
+    </div>
+    <div class="exp-list">
+      <div class="exp-row fade-in">
+        <div class="exp-left">
+          <span class="exp-date mono">Mar - Jun 2025</span>
+        </div>
+        <div class="exp-right">
+          <h4>Technical Division Coordinator</h4>
+          <p class="exp-org mono">HIMTI — BCA Webinar 2025 · HIMTI Binus University</p>
+          <ul class="exp-bullets">
+            <li>Led technical team, delegating roles across digital logistics and live production</li>
+            <li>Directed live broadcast — managing transitions, audio levels, and participant moderation</li>
+          </ul>
+        </div>
+      </div>
+      <div class="exp-row fade-in">
+        <div class="exp-left">
+          <span class="exp-date mono">Jun – Dec 2024</span>
+        </div>
+        <div class="exp-right">
+          <h4>Technical Committee Member</h4>
+          <p class="exp-org mono">HISHOT 2024 · HIMTI Binus University</p>
+          <ul class="exp-bullets">
+            <li>Supported technical setup for HIMTI's flagship annual event; kept all AV platforms running</li>
+            <li>Managed equipment inventory and hardware configuration throughout the project timeline</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="section contact-section" id="contact">
+    <div class="section-header">
+      <span class="eyebrow mono">04 – Contact</span>
+      <h2 class="section-title">Get in Touch</h2>
+      <p class="contact-sub">Open to opportunities, collaborations, and interesting conversations.</p>
+    </div>
+    <div class="contact-grid">
+      <a href="mailto:d.dechal@gmail.com" class="contact-card fade-in">
+        <span class="contact-label mono">Email</span>
+        <span class="contact-val">d.dechal@gmail.com</span>
+      </a>
+      <a href="tel:+6285933248000" class="contact-card fade-in">
+        <span class="contact-label mono">Phone</span>
+        <span class="contact-val">+62 859 3324 8000</span>
+      </a>
+      <a href="#" class="contact-card fade-in">
+        <span class="contact-label mono">LinkedIn</span>
+        <span class="contact-val">View Profile’</span>
+      </a>
+      <a href="#" class="contact-card fade-in">
+        <span class="contact-label mono">Portfolio</span>
+        <span class="contact-val">Visit Site’</span>
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span class="mono">Diven Dechal Jatiputra · 2026</span>
+    <span class="mono">Jakarta · Taipei</span>
+  </footer>
+
+  
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">→</button>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
