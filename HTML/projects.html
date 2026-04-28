@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Diven Dechal Jatiputra</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&family=Fira+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../CSS/projects.css" />
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="index.html">Diven Dechal</a>
+    <div class="nav-right">
+      <a class="nav-back" href="index.html">← Back to Portfolio</a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="toggle-track">
+          <svg viewBox="0 0 12 12" fill="none">
+            <circle cx="6" cy="6" r="2" fill="var(--muted)"/>
+            <line x1="6" y1="1" x2="6" y2="2.5" stroke="var(--muted)" stroke-width="1.2" stroke-linecap="round"/>
+            <line x1="6" y1="9.5" x2="6" y2="11" stroke="var(--muted)" stroke-width="1.2" stroke-linecap="round"/>
+            <line x1="1" y1="6" x2="2.5" y2="6" stroke="var(--muted)" stroke-width="1.2" stroke-linecap="round"/>
+            <line x1="9.5" y1="6" x2="11" y2="6" stroke="var(--muted)" stroke-width="1.2" stroke-linecap="round"/>
+          </svg>
+          <svg viewBox="0 0 12 12" fill="none">
+            <path d="M9.5 7A5 5 0 0 1 5 2.5a4.5 4.5 0 1 0 4.5 4.5z" fill="var(--muted)"/>
+          </svg>
+        </span>
+        <span class="toggle-thumb"></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="page-hero">
+    <div class="container">
+      <p class="page-label">// All Projects</p>
+      <h1 class="page-title">Work I've <em>built</em>,<br />problems I've solved</h1>
+      <p class="page-sub">Three end-to-end AI/ML projects spanning computer vision, deep learning, and natural language processing — built across 2025.</p>
+    </div>
+  </div>
+
+  <div class="projects-list">
+    <div class="container">
+
+      <!-- 01 -->
+      <div class="project-entry">
+        <div class="entry-meta">
+          <p class="entry-num">01</p>
+          <p class="entry-period">Feb 2025 – Jun 2025</p>
+          <p class="entry-role">AI Developer</p>
+          <div class="entry-stack">
+            <span class="stack-item">CNN-LSTM</span>
+            <span class="stack-item">Computer Vision</span>
+            <span class="stack-item">PyTorch</span>
+            <span class="stack-item">TensorFlow</span>
+            <span class="stack-item">Spatiotemporal</span>
+            <span class="stack-item">Hyperparameter Tuning</span>
+          </div>
+        </div>
+        <div class="entry-body">
+          <h2 class="entry-title">SignLingo — AI-Powered Sign Language Learning App</h2>
+          <p class="entry-location">// Jakarta, Indonesia</p>
+          <div class="entry-divider"></div>
+          <p>SignLingo is an AI-powered web-based platform designed to make learning Indonesian Sign Language (BISINDO) more accessible and interactive. At its core is a sophisticated gesture recognition system capable of understanding 26 distinct complex gestures in real time.</p>
+          <p>The technical centerpiece is a Hybrid CNN LSTM spatiotemporal model — a deep learning architecture that combines the spatial feature extraction power of CNNs with the temporal sequence modelling of LSTMs. This enables the system to not just recognise static hand shapes, but to understand the motion and timing of gestures over time.</p>
+          <div class="highlight-box">
+            <p class="highlight-box-title">// Key Performance Metrics</p>
+            <div class="metrics">
+              <div class="metric"><span class="metric-val">95.3%</span><span class="metric-desc">Gesture recognition accuracy</span></div>
+              <div class="metric"><span class="metric-val">26</span><span class="metric-desc">Distinct complex gestures</span></div>
+              <div class="metric"><span class="metric-val">&lt;50ms</span><span class="metric-desc">Real-time inference latency</span></div>
+            </div>
+          </div>
+          <ul class="entry-bullets">
+            <li>Enhanced model accuracy by refining the Hybrid CNN LSTM model architecture and systematically tuning hyperparameters, reaching 95.3% accuracy across all 26 gestures.</li>
+            <li>Streamlined the model training pipeline to handle large-scale sign language gesture datasets, ensuring robust performance across diverse environmental conditions such as varying lighting and backgrounds.</li>
+            <li>Optimised real-time inference latency to under 50 milliseconds, delivering seamless, instant visual feedback to users in a web-based platform.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 02 -->
+      <div class="project-entry">
+        <div class="entry-meta">
+          <p class="entry-num">02</p>
+          <p class="entry-period">Feb 2025 – Jun 2025</p>
+          <p class="entry-role">Lead Developer</p>
+          <div class="entry-stack">
+            <span class="stack-item">YOLOv8</span>
+            <span class="stack-item">Computer Vision</span>
+            <span class="stack-item">Edge Deployment</span>
+            <span class="stack-item">Raspberry Pi</span>
+            <span class="stack-item">PyTorch</span>
+            <span class="stack-item">Anchor-free Detection</span>
+          </div>
+        </div>
+        <div class="entry-body">
+          <h2 class="entry-title">A Deep Learning Framework for Early Forest Fire Detection</h2>
+          <p class="entry-location">// Jakarta, Indonesia</p>
+          <div class="entry-divider"></div>
+          <p>This project tackles early-stage forest fire detection using state-of-the-art deep learning — with the goal of catching fires before they grow uncontrollable. The system detects smoke and early flame indicators, making detection possible well ahead of traditional sensors.</p>
+          <p>As Lead Developer, the architecture of choice was YOLOv8 — the latest YOLO evolution with anchor-free detection and decoupled prediction heads for cleaner predictions and lower false-positive rates compared to older architectures like YOLOv5.</p>
+          <p>A major focus was making the model deployable on resource-constrained edge devices like Raspberry Pi — meaning this system could realistically be embedded into forest monitoring stations without requiring cloud connectivity.</p>
+          <div class="highlight-box">
+            <p class="highlight-box-title">// Key Performance Metrics</p>
+            <div class="metrics">
+              <div class="metric"><span class="metric-val">93.2%</span><span class="metric-desc">mAP@0.5</span></div>
+              <div class="metric"><span class="metric-val">91.3%</span><span class="metric-desc">Precision</span></div>
+              <div class="metric"><span class="metric-val">~43 FPS</span><span class="metric-desc">Inference speed</span></div>
+              <div class="metric"><span class="metric-val">23ms</span><span class="metric-desc">Per image</span></div>
+            </div>
+          </div>
+          <ul class="entry-bullets">
+            <li>Developed a real-time computer vision framework using YOLOv8 to detect early-stage forest fires through smoke and flame on a custom-curated fire/non-fire dataset.</li>
+            <li>Achieved 93.2% mAP@0.5 and 91.3% precision — outperforming baseline YOLOv5 models through anchor-free detection and decoupled heads, significantly reducing false positives.</li>
+            <li>Optimised for edge deployment with ~43 FPS and 23ms per image inference, suitable for Raspberry Pi and other resource-constrained hardware in the field.</li>
+            <li>Leveraged YOLOv8's modern architecture to reduce false positive rates in challenging visual scenarios such as fog, mist, and cloud cover.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 03 -->
+      <div class="project-entry">
+        <div class="entry-meta">
+          <p class="entry-num">03</p>
+          <p class="entry-period">Sept 2025 – Feb 2026</p>
+          <p class="entry-role">NLP Developer</p>
+          <div class="entry-stack">
+            <span class="stack-item">DistilBERT</span>
+            <span class="stack-item">NLP</span>
+            <span class="stack-item">Flask API</span>
+            <span class="stack-item">Python</span>
+            <span class="stack-item">NLTK</span>
+            <span class="stack-item">TensorFlow</span>
+            <span class="stack-item">Jigsaw Dataset</span>
+          </div>
+        </div>
+        <div class="entry-body">
+          <h2 class="entry-title">NLP-Powered Content Moderation Engine</h2>
+          <p class="entry-location">// Jakarta, Indonesia</p>
+          <div class="entry-divider"></div>
+          <p>Online communities generate enormous volumes of text, and manually moderating toxic content at scale is simply not feasible. This project built an automated, real-time content moderation pipeline powered by modern transformer-based NLP — enabling platforms to detect and flag toxic behaviour before it causes harm.</p>
+          <p>The core model is DistilBERT — a distilled version of Google's BERT, designed to be significantly faster and lighter while retaining most of BERT's language understanding. Fine-tuned on the Jigsaw Toxic Comment Classification dataset, the model understands context, sarcasm, and subtle forms of harmful language beyond simple keyword matching.</p>
+          <p>The production-ready backend was built with Flask, exposing REST API endpoints that allow any application to submit text and receive a real-time toxicity classification response.</p>
+          <div class="highlight-box">
+            <p class="highlight-box-title">// Key Performance Metrics</p>
+            <div class="metrics">
+              <div class="metric"><span class="metric-val">92%</span><span class="metric-desc">Classification accuracy</span></div>
+              <div class="metric"><span class="metric-val">Real-time</span><span class="metric-desc">REST API inference</span></div>
+              <div class="metric"><span class="metric-val">DistilBERT</span><span class="metric-desc">Fine-tuned transformer</span></div>
+            </div>
+          </div>
+          <ul class="entry-bullets">
+            <li>Developed and optimised text preprocessing modules using Python, NLTK, and TensorFlow — ensuring raw community data was properly tokenized and cleaned for toxic behaviour detection.</li>
+            <li>Assisted in fine-tuning a DistilBERT model on the Jigsaw dataset, focusing on hyperparameter adjustment and training stability to improve detection of nuanced toxicity patterns.</li>
+            <li>Implemented and tested Flask REST API endpoints for the inference engine, enabling seamless integration of the NLP model into real-time moderation workflows.</li>
+            <li>Collaborated on validation by analysing model performance metrics and iterating toward a final classification accuracy of 92%.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 Diven Dechal Jatiputra</p>
+    <a class="footer-back" href="index.html">← Back to Portfolio</a>
+  </footer>
+
+  <script src="../JS/projects.js"></script>
+</body>
+</html>
