@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diven Dechal Jatiputra — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&family=Fira+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="CSS/style.css" />
+</head>
+<body>
+
+  <nav>
+    <div class="nav-left">
+      <a class="nav-logo" href="#">Diven Dechal</a>
+      <ul class="nav-links">
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certificates">Certs</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+      <span class="toggle-track">
+        <!-- Sun -->
+        <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="6" cy="6" r="2" fill="var(--muted)"/>
+          <line x1="6" y1="1" x2="6" y2="2.5" stroke="var(--muted)" stroke-width="1.2" stroke-linecap="round"/>
+          <line x1="6" y1="9.5" x2="6" y2="11" stroke="var(--muted)" stroke-width="1.2" stroke-linecap="round"/>
+          <line x1="1" y1="6" x2="2.5" y2="6" stroke="var(--muted)" stroke-width="1.2" stroke-linecap="round"/>
+          <line x1="9.5" y1="6" x2="11" y2="6" stroke="var(--muted)" stroke-width="1.2" stroke-linecap="round"/>
+        </svg>
+        <!-- Moon -->
+        <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9.5 7A5 5 0 0 1 5 2.5a4.5 4.5 0 1 0 4.5 4.5z" fill="var(--muted)"/>
+        </svg>
+      </span>
+      <span class="toggle-thumb"></span>
+    </button>
+  </nav>
+
+  <section id="hero">
+    <div class="hero-left">
+      <p class="hero-tag">// CS Undergraduate · AI &amp; ML Enthusiast</p>
+      <h1 class="hero-name">Diven<br /><em>Dechal</em><br />Jatiputra</h1>
+      <p class="hero-desc">Computer Science student at Binus University, currently on exchange at National Taiwan University of Science and Technology. Building intelligent systems — from computer vision to NLP.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#projects">View Projects</a>
+        <a class="btn btn-outline" href="resource\Diven_CV.pdf">Resume</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-deco"></div>
+      <div class="profile-photo-wrap">
+        <img class="profile-photo" src="resource/pp.jpg" alt="Diven Dechal Jatiputra" />      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="container">
+      <p class="section-label reveal">// Education</p>
+      <h2 class="section-title reveal">Where I'm Learning</h2>
+      <div class="section-divider reveal"></div>
+      <div class="edu-grid">
+        <div class="edu-card reveal">
+          <span class="edu-badge badge-main">Primary · 2023–2027</span>
+          <h3 class="edu-school">Bina Nusantara University</h3>
+          <p class="edu-degree">Bachelor of Computer Science — Global Class</p>
+          <p class="edu-period">Sept. 2023 — Expected Feb. 2027 · Jakarta, Indonesia</p>
+          <p class="edu-note">Global Class program with an emphasis on international collaboration and advanced technical coursework in AI, systems, and software engineering.</p>
+        </div>
+        <div class="edu-card reveal" style="transition-delay:0.1s">
+          <span class="edu-badge badge-exchange">✈ Exchange · 2026</span>
+          <h3 class="edu-school">National Taiwan University of Science and Technology</h3>
+          <p class="edu-degree">Dept. Computer Science &amp; Information Engineering — Exchange Student</p>
+          <p class="edu-period">Feb. 2026 — Jun. 2026 · Taipei, Taiwan</p>
+          <p class="edu-note">Selected for a competitive exchange program at one of Taiwan's top technical universities — immersing in advanced research, diverse academic culture, and cross-cultural collaboration.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="certificates">
+    <div class="container">
+      <p class="section-label reveal">// Certifications</p>
+      <h2 class="section-title reveal">Credentials &amp; Certificates</h2>
+      <p class="section-sub reveal">Verified credentials from leading technology organisations.</p>
+      <div class="section-divider reveal"></div>
+      <div class="cert-grid">
+
+        <!-- Alibaba Cloud -->
+        <div class="cert-card reveal">
+          <div class="cert-img-wrap">
+            <img src="resource/alibaba.jpg" alt="Alibaba Cloud Certificate" class="cert-img" />
+          </div>
+          <div class="cert-body">
+            <p class="cert-issuer">Alibaba Cloud</p>
+            <h3 class="cert-name">Alibaba Cloud Certified Associate: Cloud Engineer</h3>
+            <div class="cert-meta">
+              <span class="cert-date">Issued May 2025 · Expires May 2027</span>
+              <span class="cert-id">ID: IACA13250500210482L</span>
+            </div>
+            <a href="resource/alibaba-cert.jpg" class="cert-btn">View Certificate →</a>
+          </div>
+        </div>
+
+        <!-- AWS Cloud 101 -->
+        <div class="cert-card reveal" style="transition-delay:0.1s">
+          <div class="cert-img-wrap">
+            <img src="resource/aws.jpg" alt="AWS Certificate" class="cert-img" />
+          </div>
+          <div class="cert-body">
+            <p class="cert-issuer">Amazon Web Services (AWS)</p>
+            <h3 class="cert-name">AWS Educate Introduction to Cloud 101</h3>
+            <div class="cert-meta">
+              <span class="cert-date">Issued Oct 2024</span>
+            </div>
+            <a href="https://www.credly.com/badges/292834a7-c9d0-4af4-9a19-4c6aaaeac158/" class="cert-btn">View Certificate →</a>
+          </div>
+        </div>
+
+        <!-- AWS Compute -->
+        <div class="cert-card reveal" style="transition-delay:0.15s">
+          <div class="cert-img-wrap">
+            <img src="resource/aws.jpg" alt="AWS Certificate" class="cert-img" />
+          </div>
+          <div class="cert-body">
+            <p class="cert-issuer">Amazon Web Services (AWS)</p>
+            <h3 class="cert-name">AWS Educate Getting Started with Compute</h3>
+            <div class="cert-meta">
+              <span class="cert-date">Issued Oct 2024</span>
+            </div>
+            <a href="https://www.credly.com/badges/dbf9cd7e-7baf-4009-af47-1d5d3e913fb0/linked_in_profile" class="cert-btn">View Certificate →</a>
+          </div>
+        </div>
+
+        <!-- NVIDIA -->
+        <div class="cert-card reveal" style="transition-delay:0.2s">
+          <div class="cert-img-wrap">
+            <img src="resource/nvidia.jpg" alt="NVIDIA Certificate" class="cert-img" />
+          </div>
+          <div class="cert-body">
+            <p class="cert-issuer">NVIDIA</p>
+            <h3 class="cert-name">Building Conversational AI Applications</h3>
+            <div class="cert-meta">
+              <span class="cert-date">Issued Aug 2025</span>
+              <span class="cert-id">ID: C8GNGRZhTAicYiL42FWjVw</span>
+            </div>
+            <a href="https://learn.nvidia.com/certificates?id=RqJtTGAESUC0NpaSTUNZ7w" class="cert-btn">View Certificate →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <p class="section-label reveal">// Technical Skills</p>
+      <h2 class="section-title reveal">What I Work With</h2>
+      <div class="section-divider reveal"></div>
+      <div class="skills-wrap">
+        <div class="skill-group reveal">
+          <p class="skill-group-title">AI / Machine Learning</p>
+          <div class="skill-tags">
+            <span class="tag">PyTorch</span><span class="tag">TensorFlow</span><span class="tag">YOLOv8</span>
+            <span class="tag">BERT</span><span class="tag">Computer Vision</span><span class="tag">NLP</span>
+            <span class="tag">Scikit-learn</span><span class="tag">Pandas</span><span class="tag">NumPy</span>
+          </div>
+        </div>
+        <div class="skill-group reveal" style="transition-delay:0.1s">
+          <p class="skill-group-title">Web &amp; Backend</p>
+          <div class="skill-tags">
+            <span class="tag">Python</span><span class="tag">Flask</span><span class="tag">Laravel</span>
+            <span class="tag">PHP</span><span class="tag">JavaScript</span><span class="tag">HTML/CSS</span>
+            <span class="tag">MySQL</span><span class="tag">SQLAlchemy</span><span class="tag">R</span>
+          </div>
+        </div>
+        <div class="skill-group reveal" style="transition-delay:0.2s">
+          <p class="skill-group-title">Core &amp; Tools</p>
+          <div class="skill-tags">
+            <span class="tag">Linux</span><span class="tag">Java (OOP)</span><span class="tag">C/C++</span>
+            <span class="tag">Agile / Scrum</span><span class="tag">SDLC</span><span class="tag">Git</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <p class="section-label reveal">// Projects</p>
+      <h2 class="section-title reveal">Things I've Built</h2>
+      <p class="section-sub reveal">A selection of AI/ML projects — from gesture recognition to fire detection. Each one pushed me to learn something new.</p>
+      <div class="section-divider reveal"></div>
+      <div class="projects-grid">
+
+        <!-- SignLingo -->
+        <div class="project-card reveal">
+          <div class="project-img">
+            <img src="resource/Signlingo_thumbnail.png" alt="SignLingo App Screenshot" style="width:100%; height:100%; object-fit:cover; border-radius:4px;"/>
+          </div>
+          <div class="project-body">
+            <p class="project-num">01 — Feb 2025</p>
+            <h3 class="project-name">SignLingo – AI Sign Language App</h3>
+            <p class="project-brief">Real-time BISINDO gesture recognition system powered by a Hybrid CNN LSTM model, achieving 95.3% accuracy across 26 complex gestures with sub-50ms inference.</p>
+            <div class="project-stack"><span class="project-tag">CNN-LSTM</span><span class="project-tag">Computer Vision</span><span class="project-tag">PyTorch</span></div>
+          </div>
+        </div>
+
+        <!-- Forest Fire -->
+        <div class="project-card reveal" style="transition-delay:0.1s">
+          <div class="project-img">
+            <img src="resource/ForestFire.png" alt="Forest Fire Detection Framework Screenshot" style="width:100%; height:100%; object-fit:cover; border-radius:4px;"/>
+          </div>
+          <div class="project-body">
+            <p class="project-num">02 — Feb 2025</p>
+            <h3 class="project-name">Forest Fire Detection Framework</h3>
+            <p class="project-brief">YOLOv8-based computer vision system detecting early-stage fires via smoke and flame. Optimised for edge deployment at ~43 FPS with 93.2% mAP@0.5.</p>
+            <div class="project-stack"><span class="project-tag">YOLOv8</span><span class="project-tag">Edge AI</span><span class="project-tag">Real-time</span></div>
+          </div>
+        </div>
+
+        <!-- NLP Engine -->
+        <div class="project-card reveal" style="transition-delay:0.2s">
+          <div class="project-img">
+            <img src="resource/Discord.jpg" alt="NLP Content Moderation Engine Screenshot" style="width:100%; height:100%; object-fit:cover; border-radius:4px;"/>
+          </div>
+          <div class="project-body">
+            <p class="project-num">03 — Sep 2025</p>
+            <h3 class="project-name">NLP Content Moderation Engine</h3>
+            <p class="project-brief">Fine-tuned DistilBERT on the Jigsaw dataset for real-time toxic content detection, with a Flask REST API backend reaching 92% classification accuracy.</p>
+            <div class="project-stack"><span class="project-tag">DistilBERT</span><span class="project-tag">NLP</span><span class="project-tag">Flask</span></div>
+          </div>
+        </div>
+
+      </div>
+      <div class="projects-footer reveal">
+        <a class="btn btn-amber" href="HTML/projects.html">View All Projects in Detail →</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="container">
+      <p class="section-label reveal">// Organizational Experience</p>
+      <h2 class="section-title reveal">How I've Led</h2>
+      <div class="section-divider reveal"></div>
+      <div class="exp-list">
+        <div class="exp-item reveal">
+          <div class="exp-meta">
+            <p class="exp-role">Technical Division Coordinator</p>
+            <p class="exp-org">HIMTI × BCA Webinar 2025</p>
+            <p class="exp-org" style="color:var(--muted);font-weight:300">HIMTI Binus University</p>
+            <p class="exp-period">Mar. 2025 — Jun. 2025</p>
+          </div>
+          <ul class="exp-bullets">
+            <li>Led and managed a team of technical staff, delegating roles to ensure full coverage of all digital logistics and live production requirements.</li>
+            <li>Directed live broadcast execution — managing real-time transitions, audio levels, and participant moderation for an uninterrupted professional stream.</li>
+          </ul>
+        </div>
+        <div class="exp-item reveal">
+          <div class="exp-meta">
+            <p class="exp-role">Technical Committee Member</p>
+            <p class="exp-org">HISHOT 2024</p>
+            <p class="exp-org" style="color:var(--muted);font-weight:300">HIMTI Binus University</p>
+            <p class="exp-period">Jun. 2024 — Dec. 2024</p>
+          </div>
+          <ul class="exp-bullets">
+            <li>Supported technical setup and execution of HIMTI's flagship annual event, ensuring all audio-visual and digital platforms remained fully operational.</li>
+            <li>Monitored live platforms, assisting with moderation and content delivery.</li>
+            <li>Collaborated with the technical division to manage equipment inventory and hardware configuration throughout the project timeline.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="contact">
+    <div class="container">
+      <div class="contact-layout">
+
+        <!-- LEFT -->
+        <div class="contact-left reveal">
+          <p class="section-label">// Let's Connect</p>
+          <h2 class="contact-heading">Open to<br /><em>Opportunities</em></h2>
+          <div class="section-divider"></div>
+          <p class="contact-blurb">I'm actively looking for internship roles in AI/ML or backend engineering. Currently on exchange in Taipei — open to remote or on-site roles from mid-2026.</p>
+        </div>
+
+        <!-- RIGHT: stacked contact rows -->
+        <div class="contact-right reveal" style="transition-delay:0.15s">
+          <a href="mailto:d.dechal@gmail.com" class="contact-row">
+            <span class="contact-row-label">Email</span>
+            <span class="contact-row-arrow">→</span>
+            <span class="contact-row-value">d.dechal@gmail.com</span>
+          </a>
+          <a href="tel:+6285933248000" class="contact-row">
+            <span class="contact-row-label">Phone</span>
+            <span class="contact-row-arrow">→</span>
+            <span class="contact-row-value">+62 859 3324 8000</span>
+          </a>
+          <a href="https://www.linkedin.com/in/divendechal/" class="contact-row">
+            <span class="contact-row-label">LinkedIn</span>
+            <span class="contact-row-arrow">→</span>
+            <span class="contact-row-value">linkedin.com/in/DivenDechal</span>
+          </a>
+          <a href="https://www.instagram.com/diven.dechal/" class="contact-row">
+            <span class="contact-row-label">Instagram</span>
+            <span class="contact-row-arrow">→</span>
+            <span class="contact-row-value">@diven.dechal</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Diven Dechal Jatiputra · Jakarta, Indonesia</p>
+    <a href="HTML/projects.html">All Projects →</a>
+  </footer>
+
+  <script src="JS/main.js"></script>
+</body>
+</html>
