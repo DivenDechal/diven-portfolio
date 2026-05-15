@@ -237,8 +237,18 @@
     .edu-note { margin-top: 1rem; font-size: 0.82rem; color: var(--muted); font-style: italic; line-height: 1.6; }
 
     /* ── SKILLS ── */
-    #skills { background: var(--surface); }
-    .skills-wrap { display: grid; grid-template-columns: repeat(3,1fr); gap: 2rem; margin-top: 3rem; }
+    #skills { background: var(--bg); }
+    .skills-wrap {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+    /* First 3 cards each span 2 of 6 columns = full width row */
+    .skill-group { grid-column: span 2; }
+    /* Last 2 cards: centred by starting at col 2 and 4 */
+    .skill-group:nth-child(4) { grid-column: 2 / 4; }
+    .skill-group:nth-child(5) { grid-column: 4 / 6; }
     .skill-group { padding: 2rem; border: 1px solid var(--border); border-radius: 4px; background: var(--surface); transition: border-color 0.25s, background 0.3s; }
     .skill-group:hover { border-color: var(--accent); }
     .skill-group-title { font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 1rem; }
@@ -246,7 +256,7 @@
     .tag { font-size: 0.78rem; padding: 0.3rem 0.7rem; background: var(--accent-faint); color: var(--text); border-radius: 2px; transition: background 0.3s; }
 
     /* ── PROJECTS ── */
-    #projects { background: var(--bg); }
+    #projects { background: var(--surface); }
     .projects-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.5rem; margin-bottom: 3rem; }
     .project-card {
       border: 1px solid var(--border); border-radius: 4px;
@@ -276,7 +286,7 @@
     .projects-footer { text-align: center; padding-top: 1rem; border-top: 1px solid var(--border); }
 
     /* ── EXPERIENCE ── */
-    #experience { background: var(--surface); }
+    #experience { background: var(--bg); }
     .exp-list { margin-top: 3rem; }
     .exp-item { display: grid; grid-template-columns: 1fr 2.5fr; gap: 2rem; padding: 2rem 0; border-top: 1px solid var(--border); }
     .exp-role { font-family: var(--serif); font-size: 1.05rem; font-weight: 600; margin-bottom: 0.3rem; color: var(--text); }
@@ -356,118 +366,6 @@
       font-weight: 400;
     }
 
-    /* ── CERTIFICATES ── */
-    #certificates { background: var(--bg); }
-
-    .cert-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1.5rem;
-    }
-
-    .cert-card {
-      display: flex;
-      flex-direction: row;
-      gap: 1rem;
-      padding: 1.25rem;
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      overflow: hidden;
-      background: var(--bg);
-      transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
-    }
-    .cert-card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 14px 40px rgba(0,0,0,0.1);
-      border-color: var(--accent);
-    }
-    [data-theme="dark"] .cert-card:hover {
-      box-shadow: 0 14px 40px rgba(0,0,0,0.45);
-    }
-
-    /* certificate thumbnail */
-    .cert-img-wrap {
-      width: 64px;
-      height: 64px;
-      flex-shrink: 0;
-      background: var(--accent-faint);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-      border-radius: 8px;
-      border: 1px solid var(--border);
-      align-self: flex-start;
-      margin-top: 0.2rem;
-    }
-    .cert-img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
-      display: block;
-    }
-
-    /* card details */
-    .cert-body {
-      padding: 1.4rem 1.5rem;
-      display: flex;
-      flex-direction: column;
-      gap: 0.4rem;
-      flex: 1;
-    }
-    .cert-issuer {
-      font-family: var(--mono);
-      font-size: 0.68rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--accent);
-    }
-    .cert-name {
-      font-family: var(--sans);
-      font-size: 0.92rem;
-      font-weight: 600;
-      color: var(--text);
-      line-height: 1.4;
-      margin-bottom: 0.2rem;
-    }
-    .cert-meta {
-      display: flex;
-      flex-direction: column;
-      gap: 0.2rem;
-      margin-bottom: 0.6rem;
-    }
-    .cert-date {
-      font-size: 0.78rem;
-      color: var(--muted);
-    }
-    .cert-id {
-      font-family: var(--mono);
-      font-size: 0.68rem;
-      color: var(--muted);
-      opacity: 0.75;
-      word-break: break-all;
-    }
-    .cert-btn {
-      display: inline-block;
-      margin-top: auto;
-      padding: 0.45rem 1rem;
-      font-family: var(--sans);
-      font-size: 0.76rem;
-      font-weight: 500;
-      letter-spacing: 0.04em;
-      color: var(--accent);
-      border: 1px solid var(--accent);
-      border-radius: 4px;
-      text-decoration: none;
-      width: fit-content;
-      transition: background 0.2s, color 0.2s;
-    }
-    .cert-btn:hover {
-      background: var(--accent);
-      color: var(--bg);
-    }
-
     /* ── FOOTER ── */
     footer { background: var(--footer-bg); border-top: 1px solid var(--border); padding: 1.5rem 4rem; display: flex; justify-content: space-between; align-items: center; transition: background 0.3s; }
     footer p { font-size: 0.78rem; color: var(--footer-text); }
@@ -489,8 +387,9 @@
       .hero-right { display: none; }
       .hero-left { padding: 6rem 2rem 4rem; }
       .container { padding: 0 2rem; }
-      .edu-grid, .projects-grid, .skills-wrap, .contact-layout, .cert-grid { grid-template-columns: 1fr; }
-      .cert-img-wrap { width: 52px; height: 52px; }
+      .edu-grid, .projects-grid, .contact-layout { grid-template-columns: 1fr; }
+      .skills-wrap { grid-template-columns: 1fr 1fr; }
+      .skill-group { grid-column: span 1 !important; }
       .exp-item { grid-template-columns: 1fr; gap: 0.5rem; }
       footer { flex-direction: column; gap: 0.5rem; text-align: center; padding: 1.5rem 2rem; }
     }
